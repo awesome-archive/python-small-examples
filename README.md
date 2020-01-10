@@ -1,6 +1,6 @@
-告别枯燥，60秒学会一个小例子，系统学习Python，从入门到大师。**Python之路**已有190个例子：
+告别枯燥，60秒学会一个小例子，系统学习Python，从入门到大师。**Python之路**已有`200`个例子：
 
-第零章：感受Python之美
+引言：感受Python之美
 
 第一章：Python基础 
 
@@ -16,23 +16,23 @@
 
 第七章：Python画图
 
-第八章：Python实战
+第八章：Python实用工具
 
-第九章：Python基础算法
+第九章：Python实战
 
-第十章：Python机器学习
+第十章：Python基础算法
+
+第十一章：Python机器学习
 
 > 后续章节：
 >
-> 1) 不断丰富原有1~7章节；
-> 2) Python基础算法；
-> 3) python 机器学习，包括机器学习的基础概念和十大核心算法以及Sklearn和Kaggle实战的小例子。
-> 4) PyQt制作GUI
-> 5) Flask前端开发
-> 6) Python数据分析：NumPy, Pandas, Matplotlib, Plotly等
+> 1) 不断丰富原有1~7章节
+> 2) PyQt制作GUI
+> 3) Flask前端开发
+> 4) Python数据分析
 
 
-已发[《Python之路.1.1.pdf》](https://github.com/jackzhenguo/python-small-examples/releases/tag/V1.1)最新版本包括7个章节：`Python基础`，`Python字符串和正则`，`Python文件`，`Python日期`, `Python利器`，`Python画图` 章节，共计`147个`小例子。
+已发[《Python之路.1.2.pdf》](https://github.com/jackzhenguo/python-small-examples/releases/tag/V1.2.378)最新版本`V1.2.378`包括`11`个章节：`Python基础`，`Python之坑`,`Python字符串和正则`，`Python文件`，`Python日期`, `Python利器`，`Python画图` ,`Python实用工具`，`Python实战`, `Python基础算法`，`机器学习核心知识` 章节，目前超过`200个`小例子。
 
 ### 感受Python之美
 
@@ -104,6 +104,9 @@ Python绘图方便、漂亮，画图神器pyecharts几行代码就能绘制出�
 
 <img src="./img/turtlesnow.gif" alt="Sample"  width="600" height="300">
 
+timeline时间轮播图：
+
+<img src="./img/timeline.gif" alt="Sample"  width="600" height="300">
 
 #### 4 Python数据分析
 
@@ -134,9 +137,7 @@ PyQt设计器开发GUI，能够迅速通过拖动组建搭建出来，使用方�
 
 ### 一、Python基础
 
-`Python基础`主要总结Python常用内置函数；Python独有的语法特性、关键词`nonlocal`, ` global`等；内置数据结构包括：列表(list),  字典(dict),  集合(set),  元组(tuple) 以及相关的高级模块`collections`中的`Counter`,  `namedtuple`, `defaultdict`，`heapq`模块。目前共有`82`个小例子
-
-此章节一共包括`82个`基础小例子。
+`Python基础`主要总结Python常用内置函数；Python独有的语法特性、关键词`nonlocal`, ` global`等；内置数据结构包括：列表(list),  字典(dict),  集合(set),  元组(tuple) 以及相关的高级模块`collections`中的`Counter`,  `namedtuple`, `defaultdict`，`heapq`模块。目前共有`86`个小例子。
 
 #### 1 求绝对值
 
@@ -725,7 +726,7 @@ __iter__ is called!!
 5
 ```
 
-#### 44 所有对象之根
+#### 38 所有对象之根
 
 object 是所有类的基类
 
@@ -736,7 +737,7 @@ In [2]: type(o)
 Out[2]: object
 ```
 
-#### 45 打开文件
+#### 39 打开文件
 
 返回文件对象
 
@@ -759,7 +760,7 @@ mode取值表：
 | `'t'` | 文本模式（默认）                 |
 | `'+'` | 打开用于更新（读取与写入）       |
 
-#### 46 次幂
+#### 40 次幂
 
 base为底的exp次幂，如果mod给出，取余
 
@@ -768,7 +769,7 @@ In [1]: pow(3, 2, 4)
 Out[1]: 1
 ```
 
-#### 47 打印
+#### 41 打印
 
 ```python
 In [5]: lst = [1,3,5]
@@ -788,7 +789,7 @@ lst: [1, 3, 5]
 
 
 
-#### 48  创建属性的两种方式
+#### 42  创建属性的两种方式
 
 返回 property 属性，典型的用法：
 
@@ -829,7 +830,7 @@ class C:
         del self._x
 ```
 
-#### 49 创建range序列
+#### 43 创建range序列
 
 1) range(stop)
 2) range(start, stop[,step])
@@ -844,7 +845,7 @@ In [2]: range(0,11,1)
 Out[2]: range(0, 11)
 ```
 
-#### 50 反向迭代器
+#### 44 反向迭代器
 
 ```python
 In [1]: rev = reversed([1,4,2,3,1])
@@ -859,7 +860,7 @@ In [2]: for i in rev:
 1
 ```
 
-#### 51 四舍五入
+#### 45 四舍五入
 
 四舍五入，`ndigits`代表小数点后保留几位：
 
@@ -871,7 +872,7 @@ In [12]: round(10.05,1)
 Out[12]: 10.1
 ```
 
-#### 52 转为集合类型
+#### 46 转为集合类型
 
 返回一个set对象，集合内不允许有重复元素：
 
@@ -882,7 +883,7 @@ In [160]: set(a)
 Out[160]: {1, 2, 3, 4}
 ```
 
-#### 53 转为切片对象
+#### 47 转为切片对象
 
 *class* slice(*start*, *stop*[, *step*])
 
@@ -897,7 +898,7 @@ In [3]: a[my_slice_meaning]
 Out[3]: [1, 2, 1]
 ```
 
-#### 54 拿来就用的排序函数
+#### 48 拿来就用的排序函数
 
 排序：
 
@@ -915,7 +916,7 @@ Out[4]:
  {'name': 'xiaohong', 'age': 20, 'gender': 'female'}]
 ```
 
-#### 55 求和函数
+####49 求和函数
 
 求和：
 
@@ -929,7 +930,7 @@ In [185]: sum(a,10) #求和的初始值为10
 Out[185]: 21
 ```
 
-#### 56 转元组
+#### 50 转元组
 
  `tuple()` 将对象转为一个不可变的序列类型
 
@@ -940,7 +941,7 @@ Out[185]: 21
  Out[18]: (1, 3, 5)
  ```
 
-#### 57 查看对象类型
+#### 51 查看对象类型
 
 *class* `type`(*name*, *bases*, *dict*)
 
@@ -964,7 +965,7 @@ In [4]: type(tuple())
 Out[4]: tuple
 ```
 
-#### 58 聚合迭代器
+#### 52 聚合迭代器
 
 创建一个聚合了来自每个可迭代对象中的元素的迭代器：
 
@@ -982,7 +983,7 @@ In [7]: [str(y) + str(x) for x,y in zip(a,b)]
 Out[7]: ['a0', 'b1', 'c2', 'd3', 'e4']
 ```
 
-#### 59 nonlocal用于内嵌函数中
+#### 53 nonlocal用于内嵌函数中
 
 关键词`nonlocal`常用于函数嵌套中，声明变量`i`为非局部变量；
 如果不声明，`i+=1`表明`i`为函数`wrapper`内的局部变量，因为在`i+=1`引用(reference)时,i未被声明，所以会报`unreferenced variable`的错误。
@@ -1003,7 +1004,7 @@ def excepter(f):
     return wrapper
 ```
 
-#### 60 global 声明全局变量
+#### 54 global 声明全局变量
 先回答为什么要有`global`，一个变量被多个函数引用，想让全局变量被所有函数共享。有的伙伴可能会想这还不简单，这样写：
 ```python
 i = 5
@@ -1040,7 +1041,7 @@ h()
 print(i)
 ```
 
-#### 61 链式比较
+#### 55 链式比较
 
 ```python
 i = 3
@@ -1049,7 +1050,7 @@ print(1 < i <= 3)  # True
 ```
 
 
-#### 62 不用else和if实现计算器
+#### 56 不用else和if实现计算器
 
 ```python
 from operator import *
@@ -1069,7 +1070,7 @@ calculator(1, 2, '+')  # 3
 calculator(3, 4, '**')  # 81
 ```
 
-#### 63 链式操作
+#### 57 链式操作
 
 ```python
 from operator import (add, sub)
@@ -1082,7 +1083,7 @@ def add_or_sub(a, b, oper):
 add_or_sub(1, 2, '-')  # -1
 ```
 
-#### 64 交换两元素
+#### 58 交换两元素
 
 ```python
 def swap(a, b):
@@ -1092,7 +1093,7 @@ def swap(a, b):
 print(swap(1, 0))  # (0,1)
 ```
 
-#### 65 去最求平均
+#### 59 去最求平均
 
 ```python
 def score_mean(lst):
@@ -1104,7 +1105,7 @@ lst=[9.1, 9.0,8.1, 9.7, 19,8.2, 8.6,9.8]
 score_mean(lst) # 9.1
 ```
 
-#### 66 打印99乘法表
+#### 60 打印99乘法表
 
 打印出如下格式的乘法表
 
@@ -1137,7 +1138,7 @@ for i in range(1,10):
     ...:     print()
 ```
 
-#### 67 全展开
+#### 61 全展开
 
 对于如下数组：
 
@@ -1182,7 +1183,7 @@ b.flatten()
 array([list([1, 2, 3]), list([4, 5])], dtype=object)
 ```
 
-#### 68 列表等分
+#### 62 列表等分
 
 ```python
 from math import ceil
@@ -1204,7 +1205,7 @@ print(r)  # [[1, 3, 5, 7, 9]]
 
 ```
 
-#### 69 列表压缩
+#### 63 列表压缩
 
 ```python
 def filter_false(lst):
@@ -1216,7 +1217,7 @@ print(r)  # ['ok', [1, 2]]
 
 ```
 
-#### 70 更长列表
+#### 64 更长列表
 
 ```python
 def max_length(*lst):
@@ -1230,7 +1231,7 @@ r = max_length([1, 2, 3], [4, 5, 6, 7], [8, 9])
 print(f'更长的列表是{r}')  # [4, 5, 6, 7]
 ```
 
-#### 71 求众数
+#### 65 求众数
 
 ```python
 def top1(lst):
@@ -1241,7 +1242,7 @@ r = top1(lst)
 print(f'{lst}中出现次数最多的元素为:{r}')  # [1, 3, 3, 2, 1, 1, 2]中出现次数最多的元素为:1
 ```
 
-#### 72 多表之最
+#### 66 多表之最
 ```python 
 def max_lists(*lst):
     return max(max(*lst, key=lambda v: max(v)))
@@ -1251,7 +1252,7 @@ r = max_lists([1, 2, 3], [6, 7, 8], [4, 5])
 print(r)  # 8
 ```
 
-#### 73 列表查重
+#### 67 列表查重
 
 ```python
 def has_duplicates(lst):
@@ -1267,7 +1268,7 @@ has_duplicates(y)  # True
 
 
 
-#### 74 列表反转
+#### 68 列表反转
 
 ```python
 def reverse(lst):
@@ -1278,7 +1279,7 @@ r = reverse([1, -2, 3, 4, 1, 2])
 print(r)  # [2, 1, 4, 3, -2, 1]
 ```
 
-#### 75 浮点数等差数列
+#### 69 浮点数等差数列
 
 ```python
 def rang(start, stop, n):
@@ -1293,7 +1294,7 @@ def rang(start, stop, n):
 rang(1, 8, 10) # [1.0, 1.7, 2.4, 3.1, 3.8, 4.5, 5.2, 5.9, 6.6, 7.3, 8.0]
 ```
 
-#### 76 按条件分组
+#### 70 按条件分组
 
 ```python
 def bif_by(lst, f):
@@ -1304,7 +1305,7 @@ bif_by(records, lambda x: x<80) # [[25, 31, 34], [89]]
 ```
 
 
-#### 77 map实现向量运算
+#### 71 map实现向量运算
 
 ```python
 #多序列运算函数—map(function,iterabel,iterable2)
@@ -1314,7 +1315,7 @@ list(map(lambda x,y:x*y+1,lst1,lst2))
 ### [4, 9, 16, 25, 16, 13]
 ```
 
-#### 78 值最大的字典
+#### 72 值最大的字典
 
 ```python
 def max_pairs(dic):
@@ -1328,16 +1329,16 @@ r = max_pairs({'a': -10, 'b': 5, 'c': 3, 'd': 5})
 print(r)  # [('b', 5), ('d', 5)]
 ```
 
-#### 79 合并两个字典
+#### 73 合并两个字典
 
 ```python
-def merge_dict2(dic1, dic2):
+def merge_dict(dic1, dic2):
     return {**dic1, **dic2}  # python3.5后支持的一行代码实现合并字典
 
 merge_dict({'a': 1, 'b': 2}, {'c': 3})  # {'a': 1, 'b': 2, 'c': 3}
 ```
 
-#### 80 topn字典
+#### 74 topn字典
 
 ```python
 from heapq import nlargest
@@ -1351,7 +1352,7 @@ topn_dict({'a': 10, 'b': 8, 'c': 9, 'd': 10}, 3)  # ['a', 'd', 'c']
 ```
 
 
-#### 81 异位词
+#### 75 异位词
 
 ```python
 from collections import Counter
@@ -1366,7 +1367,7 @@ anagram('eleven', 'twelve')  # False
 ```
 
 
-#### 82 逻辑上合并字典
+#### 76 逻辑上合并字典
 (1) 两种合并字典方法
 这是一般的字典合并写法
 
@@ -1386,7 +1387,7 @@ merged2 = ChainMap(dic1,dic2)
 print(merged2) # ChainMap({'x': 1, 'y': 2}, {'y': 3, 'z': 4})
 ```
 
-#### 83 命名元组提高可读性
+#### 77 命名元组提高可读性
 
 ```python
 from collections import namedtuple
@@ -1397,7 +1398,7 @@ print(lst[0].y - lst[1].y)
 
 使用命名元组写出来的代码可读性更好，尤其处理上百上千个属性时作用更加凸显。
 
-#### 84 样本抽样
+#### 78 样本抽样
 
 使用`sample`抽样，如下例子从100个样本中随机抽样10个。
 
@@ -1409,7 +1410,7 @@ lst_sample = sample(lst,10)
 print(lst_sample) # [33, 40, 35, 49, 24, 15, 48, 29, 37, 24]
 ```
 
-#### 85 重洗数据集
+#### 79 重洗数据集
 
 使用`shuffle`用来重洗数据集，**值得注意`shuffle`是对lst就地(in place)洗牌，节省存储空间**
 
@@ -1420,7 +1421,7 @@ shuffle(lst)
 print(lst[:5]) # [50, 3, 48, 1, 26]
 ```
 
-#### 86 10个均匀分布的坐标点
+#### 80 10个均匀分布的坐标点
 
 random模块中的`uniform(a,b)`生成[a,b)内的一个随机数，如下生成10个均匀分布的二维坐标点
 
@@ -1440,7 +1441,7 @@ Out[1]:
  (8.700789540392917, 1.2217577293254112)]
 ```
 
-#### 87 10个高斯分布的坐标点
+#### 81 10个高斯分布的坐标点
 
 random模块中的`gauss(u,sigma)`生成均值为u, 标准差为sigma的满足高斯分布的值，如下生成10个二维坐标点，样本误差(y-2*x-1)满足均值为0，标准差为1的高斯分布：
 
@@ -1462,7 +1463,7 @@ points = list(zip(x,y))
  (9, 17.565074449028497)]
 ```
 
-#### 88 chain高效串联多个容器对象
+#### 82 chain高效串联多个容器对象
 
 `chain`函数串联a和b，兼顾内存效率同时写法更加优雅。
 
@@ -1483,7 +1484,7 @@ for i in chain(a,b):
 6
 ```
 
-#### 89 操作函数对象
+#### 83 操作函数对象
 
 ```python
 In [31]: def f():
@@ -1500,7 +1501,7 @@ i'm g
 
 创建函数对象的list，根据想要调用的index，方便统一调用。
 
-#### 90 生成逆序序列
+#### 84 生成逆序序列
 
 ```python
 list(range(10,-1,-1)) # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
@@ -1508,7 +1509,131 @@ list(range(10,-1,-1)) # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 第三个参数为负时，表示从第一个参数开始递减，终止到第二个参数(不包括此边界)
 
+#### 85 函数的五类参数使用例子
 
+python五类参数：位置参数，关键字参数，默认参数，可变位置或关键字参数的使用。
+
+```python
+def f(a,*b,c=10,**d):
+  print(f'a:{a},b:{b},c:{c},d:{d}')
+```
+*默认参数`c`不能位于可变关键字参数`d`后.*
+
+调用f:
+```python
+In [10]: f(1,2,5,width=10,height=20)
+a:1,b:(2, 5),c:10,d:{'width': 10, 'height': 20}
+```
+可变位置参数`b`实参后被解析为元组`(2,5)`;而c取得默认值10; d被解析为字典.
+
+再次调用f:
+```python
+In [11]: f(a=1,c=12)
+a:1,b:(),c:12,d:{}
+```
+a=1传入时a就是关键字参数，b,d都未传值，c被传入12，而非默认值。
+
+注意观察参数`a`, 既可以`f(1)`,也可以`f(a=1)` 其可读性比第一种更好，建议使用f(a=1)。如果要强制使用`f(a=1)`，需要在前面添加一个**星号**:
+```python
+def f(*,a,*b):
+  print(f'a:{a},b:{b}')
+```
+此时f(1)调用，将会报错：`TypeError: f() takes 0 positional arguments but 1 was given`
+
+只能`f(a=1)`才能OK.
+
+说明前面的`*`发挥作用，它变为只能传入关键字参数，那么如何查看这个参数的类型呢？借助python的`inspect`模块：
+
+```python
+In [22]: for name,val in signature(f).parameters.items():
+    ...:     print(name,val.kind)
+    ...:
+a KEYWORD_ONLY
+b VAR_KEYWORD
+```
+
+可看到参数`a`的类型为`KEYWORD_ONLY`，也就是仅仅为关键字参数。
+
+但是，如果f定义为：
+```python
+def f(a,*b):
+  print(f'a:{a},b:{b}')
+```
+查看参数类型：
+```python
+In [24]: for name,val in signature(f).parameters.items():
+    ...:     print(name,val.kind)
+    ...:
+a POSITIONAL_OR_KEYWORD
+b VAR_POSITIONAL
+```
+可以看到参数`a`既可以是位置参数也可是关键字参数。
+
+#### 86  使用slice对象
+
+生成关于蛋糕的序列cake1：
+
+```
+In [1]: cake1 = list(range(5,0,-1))
+
+In [2]: b = cake1[1:10:2]
+
+In [3]: b
+Out[3]: [4, 2]
+
+In [4]: cake1
+Out[4]: [5, 4, 3, 2, 1]
+```
+
+再生成一个序列：
+
+```
+In [5]: from random import randint
+   ...: cake2 = [randint(1,100) for _ in range(100)]
+   ...: # 同样以间隔为2切前10个元素，得到切片d
+   ...: d = cake2[1:10:2]
+In [6]: d
+Out[6]: [75, 33, 63, 93, 15]
+```
+
+你看，我们使用同一种切法，分别切开两个蛋糕cake1,cake2. 后来发现这种切法`极为经典`，又拿它去切更多的容器对象。
+
+那么，为什么不把这种切法封装为一个对象呢？于是就有了slice对象。
+
+定义slice对象极为简单，如把上面的切法定义成slice对象：
+
+```
+perfect_cake_slice_way = slice(1,10,2)
+#去切cake1
+cake1_slice = cake1[perfect_cake_slice_way] 
+cake2_slice = cake2[perfect_cake_slice_way]
+
+In [11]: cake1_slice
+Out[11]: [4, 2]
+
+In [12]: cake2_slice
+Out[12]: [75, 33, 63, 93, 15]
+```
+
+与上面的结果一致。
+
+对于逆向序列切片，`slice`对象一样可行：
+
+```
+a = [1,3,5,7,9,0,3,5,7]
+a_ = a[5:1:-1]
+
+named_slice = slice(5,1,-1)
+a_slice = a[named_slice] 
+
+In [14]: a_
+Out[14]: [0, 9, 7, 5]
+
+In [15]: a_slice
+Out[15]: [0, 9, 7, 5]
+```
+
+频繁使用同一切片的操作可使用slice对象抽出来，复用的同时还能提高代码可读性。
 
 ### 二 Python之坑
 
@@ -1599,26 +1724,129 @@ def f(a):
 a = [lambda x,i=i: x+i for i in range(3)] # YES!
 ```
 
-#### 5 分不清是默认参数还是关键字参数
+#### 5 各种参数使用之坑
 
-定义函数f，在使用它时，width的以下三种写法都是OK的，如果未了解函数原型，容易分不清width到底是位置参数还是关键字参数。
+Python强大多变，原因之一在于函数参数类型的多样化。方便的同时，也为使用者带来更多的约束规则。如果不了解这些规则，调用函数时，可能会出现如下一些语法异常：
+
+*(1) SyntaxError: positional argument follows keyword argument*
+
+
+*(2) TypeError: f() missing 1 required keyword-only argument: 'b'*
+
+
+*(3) SyntaxError: keyword argument repeated*
+
+*(4) TypeError: f() missing 1 required positional argument: 'b'*
+
+*(5) TypeError: f() got an unexpected keyword argument 'a'*
+
+*(6) TypeError: f() takes 0 positional arguments but 1 was given*
+
+
+总结主要的参数使用规则
+
+位置参数
+
+`位置参数`的定义：`函数调用`时根据函数定义的参数位（形参）置来传递参数，是最常见的参数类型。
 
 ```python
-def f(a,width=10.0):
-    print(width)
+def f(a):
+  return a
 
-f(1,width=15.0) # 15.0  # 容易分不清width是位置参数还是关键字参数
-f(1,15.0) # 15.0
-f(1) # 10.0
+f(1) # 位置参数 
+```
+位置参数不能缺少：
+```python
+def f(a,b):
+  pass
+
+f(1) # TypeError: f() missing 1 required positional argument: 'b'
 ```
 
-width是带默认参数的位置参数，关键字参数必须使用两个星号声明。因此如果要区分它们，需要关注函数的定义。
+**规则1：位置参数必须一一对应，缺一不可**
+
+关键字参数
+
+在函数调用时，通过‘键--值’方式为函数形参传值，不用按照位置为函数形参传值。
 
 ```python
-def f(a,**b):
-    print(b)
-f(1,width=15.0) # width是关键字参数，不是默认参数
+def f(a):
+  print(f'a:{a}')
 ```
+这么调用，`a`就是关键字参数：
+```python
+f(a=1)
+```
+但是下面调用就不OK:
+```python
+f(a=1,20.) # SyntaxError: positional argument follows keyword argument
+```
+
+**规则2：关键字参数必须在位置参数右边**
+
+
+下面调用也不OK:
+```python
+f(1,width=20.,width=30.) #SyntaxError: keyword argument repeated
+
+```
+
+**规则3：对同一个形参不能重复传值**
+
+
+默认参数
+
+在定义函数时，可以为形参提供默认值。对于有默认值的形参，调用函数时如果为该参数传值，则使用传入的值，否则使用默认值。如下`b`是默认参数：
+```python
+def f(a,b=1):
+  print(f'a:{a}, b:{b}')
+
+```
+
+
+**规则4：无论是函数的定义还是调用，默认参数的定义应该在位置形参右面**
+
+只在定义时赋值一次；默认参数通常应该定义成不可变类型
+
+
+可变位置参数
+
+如下定义的参数a为可变位置参数：
+```python
+def f(*a):
+  print(a)
+```
+调用方法：
+```python
+f(1) #打印结果为元组： (1,)
+f(1,2,3) #打印结果：(1, 2, 3)
+```
+
+但是，不能这么调用：
+```python
+f(a=1) # TypeError: f() got an unexpected keyword argument 'a'
+```
+
+
+可变关键字参数
+
+如下`a`是可变关键字参数：
+```python
+def f(**a):
+  print(a)
+```
+调用方法：
+```python
+f(a=1) #打印结果为字典：{'a': 1}
+f(a=1,b=2,width=3) #打印结果：{'a': 1, 'b': 2, 'width': 3}
+```
+
+但是，不能这么调用：
+```python
+f(1) TypeError: f() takes 0 positional arguments but 1 was given
+```
+
+接下来，单独推送分析一个小例子，综合以上各种参数类型的函数及调用方法，敬请关注。
 
 #### 6 列表删除之坑
 
@@ -1796,11 +2024,9 @@ array = [5, 7, 9]
 g = (x for x in [1,3,5] if [5,7,9].count(x) > 0)
 ```
 
-正在陆续汇总更多Python使用之坑 ... 
-
 ### 三、Python字符串和正则
 
-字符串无所不在，字符串的处理也是最常见的操作。本章节将总结和字符串处理相关的一切操作。主要包括基本的字符串操作；高级字符串操作之正则。目前共有`16`个小例子
+字符串无所不在，字符串的处理也是最常见的操作。本章节将总结和字符串处理相关的一切操作。主要包括基本的字符串操作；高级字符串操作之正则。目前共有`20`个小例子
 
 #### 1 反转字符串
 
@@ -1904,15 +2130,18 @@ print(r)
 # ['20', '13', '59']
 ```
 
-#### 4 匹配浮点数
+#### 4 匹配浮点数和整数
 
 ?表示前一个字符匹配0或1次
 ```python
 s = '一共20行代码运行时间13.59s'
-pat = r'\d+\.?\d+' # ?表示匹配小数点(\.)0次或1次
+pat = r'\d+\.?\d+' # ?表示匹配小数点(\.)0次或1次，这种写法有个小bug，不能匹配到个位数的整数
 r = re.findall(pat,s)
 print(r)
 # ['20', '13.59']
+
+# 更好的写法：
+pat = r'\d+\.\d+|\d+' # A|B，匹配A失败才匹配B
 ```
 #### 5 ^匹配字符串的开头
 
@@ -2573,6 +2802,8 @@ Python日期章节，由表示大日期的`calendar`, `date`模块，逐渐过�
 
 ```python
 import calendar
+from datetime import date
+mydate = date.today()
 year_calendar_str = calendar.calendar(2019)
 print(f"{mydate.year}年的日历图：{year_calendar_str}\n")
 ```
@@ -2623,6 +2854,9 @@ Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su
 
 ```python
 import calendar
+from datetime import date
+
+mydate = date.today()
 is_leap = calendar.isleap(mydate.year)
 print_leap_str = "%s年是闰年" if is_leap else "%s年不是闰年\n"
 print(print_leap_str % mydate.year)
@@ -2638,7 +2872,11 @@ print(print_leap_str % mydate.year)
 
 ```python
 import calendar
+from datetime import date
+
+mydate = date.today()
 month_calendar_str = calendar.month(mydate.year, mydate.month)
+
 print(f"{mydate.year}年-{mydate.month}月的日历图：{month_calendar_str}\n")
 ```
 
@@ -2659,6 +2897,9 @@ Mo Tu We Th Fr Sa Su
 
 ```python
 import calendar
+from datetime import date
+
+mydate = date.today()
 weekday, days = calendar.monthrange(mydate.year, mydate.month)
 print(f'{mydate.year}年-{mydate.month}月的第一天是那一周的第{weekday}天\n')
 print(f'{mydate.year}年-{mydate.month}月共有{days}天\n')
@@ -2678,6 +2919,7 @@ print(f'{mydate.year}年-{mydate.month}月共有{days}天\n')
 
 ```python
 from datetime import date
+mydate = date.today()
 month_first_day = date(mydate.year, mydate.month, 1)
 print(f"当月第一天:{month_first_day}\n")
 ```
@@ -2695,6 +2937,7 @@ print(f"当月第一天:{month_first_day}\n")
 ```python
 from datetime import date
 import calendar
+mydate = date.today()
 _, days = calendar.monthrange(mydate.year, mydate.month)
 month_last_day = date(mydate.year, mydate.month, days)
 print(f"当月最后一天:{month_last_day}\n")
@@ -3109,35 +3352,8 @@ list index out of range: 10
 spending time:1.01
 ```
 
-#### 13 定制递减迭代器
 
-```python
-#编写一个迭代器，通过循环语句，实现对某个正整数的依次递减1，直到0.
-class Descend(Iterator):
-    def __init__(self,N):
-        self.N=N
-        self.a=0
-    def __iter__(self):
-        return self 
-    def __next__(self):
-        while self.a<self.N:
-            self.N-=1
-            return self.N
-        raise StopIteration
-    
-descend_iter=Descend(10)
-print(list(descend_iter))
-[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
-```
-
-核心要点：
-
-1 `__nex__ `名字不能变，实现定制的迭代逻辑
-
-2 `raise StopIteration`：通过 raise 中断程序，必须这样写
-
-
-#### 14 测试运行时长的装饰器
+#### 13 测试运行时长的装饰器
 
 
 ```python
@@ -3172,6 +3388,123 @@ print("append/compre:",round(a/c,3))
 # append/compre: 2.749
 ```
 
+
+
+#### 14 装饰器通俗理解
+
+再看一个装饰器：
+
+```python
+def call_print(f):
+  def g():
+    print('you\'re calling %s function'%(f.__name__,))
+  return g
+```
+
+使用`call_print`装饰器：
+
+```python
+@call_print
+def myfun():
+  pass
+ 
+@call_print
+def myfun2():
+  pass
+```
+
+myfun()后返回：
+
+```python
+In [27]: myfun()
+you're calling myfun function
+
+In [28]: myfun2()
+you're calling myfun2 function
+```
+
+**使用call_print**
+
+你看，`@call_print`放置在任何一个新定义的函数上面，都会默认输出一行，你正在调用这个函数的名。
+
+这是为什么呢？注意观察新定义的`call_print`函数(加上@后便是装饰器):
+
+```python
+def call_print(f):
+  def g():
+    print('you\'re calling %s function'%(f.__name__,))
+  return g
+```
+
+它必须接受一个函数`f`，然后返回另外一个函数`g`.
+
+**装饰器本质**
+
+本质上，它与下面的调用方式效果是等效的：
+
+```
+def myfun():
+  pass
+
+def myfun2():
+  pass
+  
+def call_print(f):
+  def g():
+    print('you\'re calling %s function'%(f.__name__,))
+  return g
+```
+
+下面是最重要的代码：
+
+```
+myfun = call_print(myfun)
+myfun2 = call_print(myfun2)
+```
+
+大家看明白吗？也就是call_print(myfun)后不是返回一个函数吗，然后再赋值给myfun.
+
+再次调用myfun, myfun2时，效果是这样的：
+
+```python
+In [32]: myfun()
+you're calling myfun function
+
+In [33]: myfun2()
+you're calling myfun2 function
+```
+
+你看，这与装饰器的实现效果是一模一样的。装饰器的写法可能更加直观些，所以不用显示的这样赋值：`myfun = call_print(myfun)`，`myfun2 = call_print(myfun2)`，但是装饰器的这种封装，猛一看，有些不好理解。
+
+#### 15 定制递减迭代器
+
+```python
+#编写一个迭代器，通过循环语句，实现对某个正整数的依次递减1，直到0.
+class Descend(Iterator):
+    def __init__(self,N):
+        self.N=N
+        self.a=0
+    def __iter__(self):
+        return self 
+    def __next__(self):
+        while self.a<self.N:
+            self.N-=1
+            return self.N
+        raise StopIteration
+    
+descend_iter=Descend(10)
+print(list(descend_iter))
+[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+```
+
+核心要点：
+
+1 `__nex__ `名字不能变，实现定制的迭代逻辑
+
+2 `raise StopIteration`：通过 raise 中断程序，必须这样写
+
+
+
 ### 七、Python画图
 
 Python常用的绘图工具包括：`matplotlib`, `seaborn`, `plotly`等，以及一些其他专用于绘制某类图如词云图等的包，描绘绘图轨迹的`turtle`包等。本章节将会使用一些例子由易到难的阐述绘图的经典小例子，目前共收录`10`个。
@@ -3183,7 +3516,7 @@ turtle绘图的函数非常好用，基本看到函数名字，就能知道它�
 1 导入库
 
 ```python
-import turtle
+import turtle as p
 ```
 
 2 定义画圆函数
@@ -3907,7 +4240,179 @@ heatmap_car().render('./img/heatmap_pyecharts.html')
 
 <img src="./img/image-20191229101724665.png" alt="Sample"  width="600" height="300">
 
-### 八、Python实战
+
+
+#### 21 matplotlib绘制动画
+
+`matplotlib`是python中最经典的绘图包，里面`animation`模块能绘制动画。
+
+首先导入小例子使用的模块：
+```python
+from matplotlib import pyplot as plt
+from matplotlib import animation
+from random import randint, random
+```
+
+生成数据，`frames_count`是帧的个数，`data_count`每个帧的柱子个数
+
+```python
+class Data:
+    data_count = 32
+    frames_count = 2
+
+    def __init__(self, value):
+        self.value = value
+        self.color = (0.5, random(), random()) #rgb
+
+    # 造数据
+    @classmethod
+    def create(cls):
+        return [[Data(randint(1, cls.data_count)) for _ in range(cls.data_count)]
+                for frame_i in range(cls.frames_count)]
+```
+
+绘制动画：`animation.FuncAnimation`函数的回调函数的参数`fi`表示第几帧，注意要调用`axs.cla()`清除上一帧。
+
+```python
+def draw_chart():
+    fig = plt.figure(1, figsize=(16, 9))
+    axs = fig.add_subplot(111)
+    axs.set_xticks([])
+    axs.set_yticks([])
+
+    # 生成数据
+    frames = Data.create()
+
+    def animate(fi):
+        axs.cla()  # clear last frame
+        axs.set_xticks([])
+        axs.set_yticks([])
+        return axs.bar(list(range(Data.data_count)),        # X
+                       [d.value for d in frames[fi]],       # Y
+                       1,                                   # width
+                       color=[d.color for d in frames[fi]]  # color
+                       )
+    # 动画展示
+    anim = animation.FuncAnimation(fig, animate, frames=len(frames))
+    plt.show()
+
+
+draw_chart()
+```
+
+### 八：Python实用工具
+
+#### 1 一行代码优化输出的异常信息
+
+```python
+pip install pretty-errors
+```
+
+写一个函数测试：
+
+```python
+def divided_zero():
+    for i in range(10, -1, -1):
+        print(10/i)
+
+
+divided_zero()
+```
+
+在没有import这个`pretty-errors`前，输出的错误信息有些冗余：
+
+```python
+Traceback (most recent call last):
+  File "c:\Users\HUAWEI\.vscode\extensions\ms-python.python-2019.11.50794\pythonFiles\ptvsd_launcher.py", line 43, in <module>
+    main(ptvsdArgs)
+  File "c:\Users\HUAWEI\.vscode\extensions\ms-python.python-2019.11.50794\pythonFiles\lib\python\old_ptvsd\ptvsd\__main__.py",
+line 432, in main
+    run()
+  File "c:\Users\HUAWEI\.vscode\extensions\ms-python.python-2019.11.50794\pythonFiles\lib\python\old_ptvsd\ptvsd\__main__.py",
+line 316, in run_file
+    runpy.run_path(target, run_name='__main__')
+  File "D:\anaconda3\lib\runpy.py", line 263, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "D:\anaconda3\lib\runpy.py", line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "D:\anaconda3\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "d:\source\sorting-visualizer-master\sorting\debug_test.py", line 6, in <module>
+    divided_zero()
+  File "d:\source\sorting-visualizer-master\sorting\debug_test.py", line 3, in divided_zero
+    print(10/i)
+ZeroDivisionError: division by zero
+```
+
+我们使用刚安装的`pretty_errors`，`import`下:
+
+```python
+import pretty_errors
+
+def divided_zero():
+    for i in range(10, -1, -1):
+        print(10/i)
+
+divided_zero()
+```
+
+此时看看输出的错误信息，非常精简只有2行，去那些冗余信息：
+
+```python
+ZeroDivisionError:
+division by zero
+```
+
+完整的输出信息如下图片所示：
+
+
+
+![image-20200104103849047](./img/image-20200104103849047.png)
+
+#### 2 两行代码实现旋转和缩放图像
+
+首先安装pillow:
+
+```python
+pip install pillow
+```
+
+旋转图像下面图像45度：
+
+![](./img/plotly2.png)
+
+```python
+In [1]: from PIL import Image
+In [2]: im = Image.open('./img/plotly2.png')
+In [4]: im.rotate(45).show()
+```
+
+旋转45度后的效果图
+
+![image-20200105085120611](./img/image-20200105085120611.png)
+
+等比例缩放图像：
+
+```python
+im.thumbnail((128,72),Image.ANTIALIAS)
+```
+
+缩放后的效果图：
+
+![](./img/pillow_suofang.png)
+
+
+
+过滤图像后的效果图：
+
+```python
+from PIL import ImageFilter
+im.filter(ImageFilter.CONTOUR).show()
+```
+
+![](./img/pillow_filter.png)
+
+### 九、Python实战
 
 
 #### 1 环境搭建
@@ -4379,7 +4884,7 @@ if __name__ == '__main__':
 
 <img src="https://mmbiz.qpic.cn/mmbiz_png/FQd8gQcyN25fl867daHB4tcw6K1TcoiciaxZtJBDMfcgJAvnCWHCad74mLjrkX97EFolhUjdOucTK6tqgw2PaziaQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="Sample"  width="600" height="300">
 
-### 第九章 Python基础算法
+### 十、 Python基础算法
 
 #### 1 领略算法魅力
 
@@ -4391,34 +4896,204 @@ if __name__ == '__main__':
 
 动画还是用matplotlib做出来的，这就更完美了，一边学完美的算法，一边还能提升Python熟练度，一边还能学到使用matplotlib制作动画。
 
-#### 2  快速排序动画展示
-
-一个随机序列，使用快速排序算法，由小到大排序的过程：
+快速排序动画展示
 
 ![img](https://mmbiz.qpic.cn/mmbiz_gif/FQd8gQcyN256Z0UkwIAVsP1pMsIUYTaHibX8xewf1Sgyvfh3VAR7IkWdwQtbNsniaiaXHzjG0Tcefl3Dv4OibhbGeg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
 
-#### 3  归并排序动画展示
-
-一个随机序列，使用归并排序算法，由小到大排序的过程：
-
+归并排序动画展示
 
 
 ![img](https://mmbiz.qpic.cn/mmbiz_gif/FQd8gQcyN256Z0UkwIAVsP1pMsIUYTaHpD5ibgM0kmia30zVM163X3RF9HnX2icibkJNghcibfjicxbibIJLLYprxqOqw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
 
-#### 4 堆排序动画展示
-一个随机序列，使用堆排序算法，由小到大排序的过程：
-
-
-
-
+堆排序动画展示
 
 ![img](https://mmbiz.qpic.cn/mmbiz_gif/FQd8gQcyN256Z0UkwIAVsP1pMsIUYTaH7HenTzoiaicwFrMTCiav18yLEhPmXombelTAlAMeBhzic4icnsuoQg1D7sw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
 
 这些算法动画使用Matplotlib制作，接下来逐个补充。
 
+#### 2 排序算法的动画展示
+
+学会第一部分如何制作动画后，可将此技术应用于排序算法调整过程的动态展示上。
+
+首先生成测试使用的数据，待排序的数据个数至多`20个`，待排序序列为`random_wait_sort`，为每个值赋一个颜色值，这个由`random_rgb`负责：
+
+```python
+data_count = 20  # here, max value of data_count is 20
+
+random_wait_sort = [12, 34, 32, 24, 28, 39, 5,
+                    22, 11, 25, 33, 32, 1, 25, 3, 8, 7, 1, 34, 7]
+
+random_rgb = [(0.5, 0.811565104942967, 0.11211028937187217),
+              (0.5, 0.5201323831224014, 0.6660999602342474),
+              (0.5, 0.575976663060455, 0.17788242607567772),
+              (0.5, 0.6880174797416493, 0.43581701833249353),
+              (0.5, 0.4443131322001743, 0.6993600264279745),
+              (0.5, 0.5538835821863523, 0.889276053938713),
+              (0.5, 0.4851681185146841, 0.7977608586163772),
+              (0.5, 0.3886717808488436, 0.09319137949618972),
+              (0.5, 0.8952456581687489, 0.8282376936934484),
+              (0.5, 0.16360202854998007, 0.4538892160157194),
+              (0.5, 0.23233400128809478, 0.8544141586189615),
+              (0.5, 0.5224648797546528, 0.8194014475829123),
+              (0.5, 0.49396099968405016, 0.47441724394796825),
+              (0.5, 0.12078104526714728, 0.7715022079860492),
+              (0.5, 0.19428498518228154, 0.08174917157481443),
+              (0.5, 0.6058698403873457, 0.6085936584142663),
+              (0.5, 0.7801178568951216, 0.6414767240649862),
+              (0.5, 0.4768865661174162, 0.3889866229610085),
+              (0.5, 0.4301945092238082, 0.961688141676841),
+              (0.5, 0.40496648895289855, 0.24234095882836093)]
 
 
-### 第十章 Python机器学习
+```
+
+再封装一个简单的数据对象`Data`：
+```python
+class Data:
+    def __init__(self, value, rgb):
+        self.value = value
+        self.color = rgb
+
+    # 造数据
+    @classmethod
+    def create(cls):
+        return [Data(val, rgb) for val, rgb in zip(random_wait_sort[:data_count],
+                                                   random_rgb[:data_count])]
+```
+
+
+#### 3 先拿冒泡实验
+
+一旦发生调整，我们立即保存到帧列表`frames`中，注意此处需要`deepcopy`:
+```python
+# 冒泡排序
+def bubble_sort(waiting_sort_data):
+    frames = [waiting_sort_data]
+    ds = copy.deepcopy(waiting_sort_data)
+    for i in range(data_count-1):
+        for j in range(data_count-i-1):
+            if ds[j].value > ds[j+1].value:
+                ds[j], ds[j+1] = ds[j+1], ds[j]
+                frames.append(copy.deepcopy(ds))
+    frames.append(ds)
+    return frames
+```
+
+实验结果图：
+
+![image-20200104232411426](./img/image-20200104232411426.png)
+
+完整动画演示：
+
+![img](./img/bubble_sort.gif)
+
+#### 4 快速排序
+先上代码，比较经典，值得回味：
+```python
+def quick_sort(data_set):
+    frames = [data_set]
+    ds = copy.deepcopy(data_set)
+
+    def qsort(head, tail):
+        if tail - head > 1:
+            i = head
+            j = tail - 1
+            pivot = ds[j].value
+            while i < j:
+                if ds[i].value > pivot or ds[j].value < pivot:
+                    ds[i], ds[j] = ds[j], ds[i]
+                    frames.append(copy.deepcopy(ds))
+                if ds[i].value == pivot:
+                    j -= 1
+                else:
+                    i += 1
+            qsort(head, i)
+            qsort(i+1, tail)
+
+    qsort(0, data_count)
+    frames.append(ds)
+    return frames
+```
+快速排序算法对输入为随机的序列优势往往较为明显，同样的输入数据，它只需要`24`帧调整就能完成排序：
+
+![image-20200104232337713](./img/image-20200104232337713.png)
+
+#### 5 选择排序
+选择排序和堆排序都是选择思维，但是性能却不如堆排序：
+```python
+def selection_sort(data_set):
+    frames = [data_set]
+    ds = copy.deepcopy(data_set)
+    for i in range(0, data_count-1):
+        for j in range(i+1, data_count):
+            if ds[j].value < ds[i].value:
+                ds[i], ds[j] = ds[j], ds[i]
+                frames.append(copy.deepcopy(ds))
+
+    frames.append(ds)
+    return frames
+```
+同样的输入数据，它完成排序需要`108`帧:
+
+![image-20200104232448531](./img/image-20200104232448531.png)
+
+
+
+动画展示如下，每轮会从未排序的列表中，挑出一个最小值，放到已排序序列后面。
+
+![img](./img/select_sort.gif)
+
+#### 6 堆排序
+堆排序大大改进了选择排序，逻辑上使用二叉树，先建立一个大根堆，然后根节点与未排序序列的最后一个元素交换，重新对未排序序列建堆。
+
+完整代码如下：
+
+```python
+def heap_sort(data_set):
+    frames = [data_set]
+    ds = copy.deepcopy(data_set)
+
+    def heap_adjust(head, tail):
+        i = head * 2 + 1  # head的左孩子
+        while i < tail:
+            if i + 1 < tail and ds[i].value < ds[i+1].value:  # 选择一个更大的孩子
+                i += 1
+            if ds[i].value <= ds[head].value:
+                break
+            ds[head], ds[i] = ds[i], ds[head]
+            frames.append(copy.deepcopy(ds))
+            head = i
+            i = i * 2 + 1
+
+    # 建立一个最大堆，从最后一个父节点开始调整
+    for i in range(data_count//2-1, -1, -1):
+        heap_adjust(i, data_count)
+    for i in range(data_count-1, 0, -1):
+        ds[i], ds[0] = ds[0], ds[i]  # 把最大值放在位置i处
+        heap_adjust(0, i)  # 从0~i-1进行堆调整
+    frames.append(ds)
+    return frames
+```
+堆排序的性能也比较优秀，完成排序需要51次调整。
+
+![image-20200104232824967](./img/image-20200104232824967.png)
+
+
+#### 7 综合
+依次调用以上常见的4种排序算法，分别保存所有帧和html文件。
+
+```python
+waiting_sort_data = Data.create()
+for sort_method in [bubble_sort, quick_sort, selection_sort, heap_sort]:
+    frames = sort_method(waiting_sort_data)
+    draw_chart(frames, file_name='%s.html' % (sort_method.__name__,))
+```
+
+获取以上完整代码、所有数据文件、结果文件：[完整源码下载](./data/sort.zip)
+
+---
+
+### 十一、 Python机器学习
 
 #### 1 引言
 
@@ -4566,3 +5241,99 @@ if __name__ == '__main__':
 
 
 
+#### 8 均匀分布
+
+导入本次实验所用的4种常见分布，连续分布的代表：`beta`分布、`正态`分布，`均匀`分布，离散分布的代表：`二项`分布。
+
+绘图装饰器带有四个参数分别表示`legend`的2类说明文字，y轴label, 保存的png文件名称。
+
+```python
+import pretty_errors
+import numpy as np
+from scipy.stats import beta, norm, uniform, binom
+import matplotlib.pyplot as plt
+from functools import wraps
+
+# 定义带四个参数的画图装饰器
+
+def my_plot(label0=None, label1=None, ylabel='probability density function', fn=None):
+    def decorate(f):
+        @wraps(f)
+        def myplot():
+            fig = plt.figure(figsize=(16, 9))
+            ax = fig.add_subplot(111)
+            x, y, y1 = f()
+            ax.plot(x, y, linewidth=2, c='r', label=label0)
+            ax.plot(x, y1, linewidth=2, c='b', label=label1)
+            ax.legend()
+            plt.ylabel(ylabel)
+            # plt.show()
+            plt.savefig('./img/%s' % (fn,))
+            print('%s保存成功' % (fn,))
+            plt.close()
+        return myplot
+    return decorate
+```
+
+```python
+# 均匀分布(uniform)
+@my_plot(label0='b-a=1.0', label1='b-a=2.0', fn='uniform.png')
+def unif():
+    x = np.arange(-0.01, 2.01, 0.01)
+    y = uniform.pdf(x, loc=0.0, scale=1.0)
+    y1 = uniform.pdf(x, loc=0.0, scale=2.0)
+    return x, y, y1
+```
+
+![](./img/uniform.png)
+
+#### 9 **二项分布**
+
+红色曲线表示发生一次概率为0.3，重复50次的密度函数，二项分布期望值为0.3*50 = 15次。看到这50次实验，很可能出现的次数为10~20.可与蓝色曲线对比分析。
+
+```python
+# 二项分布
+@my_plot(label0='n=50,p=0.3', label1='n=50,p=0.7', fn='binom.png', ylabel='probability mass function')
+def bino():
+    x = np.arange(50)
+    n, p, p1 = 50, 0.3, 0.7
+    y = binom.pmf(x, n=n, p=p)
+    y1 = binom.pmf(x, n=n, p=p1)
+    return x, y, y1
+```
+
+![](./img/binom.png)
+
+#### 10 高斯分布
+
+红色曲线表示均值为0，标准差为1.0的概率密度函数，蓝色曲线的标准差更大，所以它更矮胖，显示出取值的多样性，和不稳定性。
+
+```python
+# 高斯 分布
+@my_plot(label0='u=0.,sigma=1.0', label1='u=0.,sigma=2.0', fn='guass.png')
+def guass():
+    x = np.arange(-5, 5, 0.1)
+    y = norm.pdf(x, loc=0.0, scale=1.0)
+    y1 = norm.pdf(x, loc=0., scale=2.0)
+    return x, y, y1
+```
+
+![](./img/guass.png)
+
+#### 11 beta分布
+
+beta分布的期望值如下，可从下面的两条曲线中加以验证：
+
+![image-20200105205845965](./img/image-20200105205845965.png)
+
+```python
+# beta 分布
+@my_plot(label0='a=10., b=30.', label1='a=4., b=4.', fn='beta.png')
+def bet():
+    x = np.arange(-0.01, 1, 0.001)
+    y = beta.pdf(x, a=10., b=30.)
+    y1 = beta.pdf(x, a=4., b=4.)
+    return x, y, y1
+```
+
+![](./img/beta.png)
